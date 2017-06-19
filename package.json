@@ -1,0 +1,49 @@
+{
+  "name": "easywebpack-react",
+  "version": "0.0.1",
+  "description": "react webpack building solution for easywebpack",
+  "keywords": [
+    "webpack",
+    "easywebpack",
+    "react"
+  ],
+  "dependencies": {
+    "easywebpack": "^0.4.0"
+  },
+  "devDependencies": {
+    "chai": "^4.0.0",
+    "cross-env": "^5.0.1",
+    "eslint": "^3.18.0",
+    "eslint-config-eslint": "^4.0.0",
+    "mocha": "^3.4.2"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=development node test/build",
+    "build": "cross-env NODE_ENV=production node test/build",
+    "lint": "eslint .",
+    "fix": "eslint --fix .",
+    "test": "mocha test",
+    "ci": "npm run lint && npm run cov"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "tool"
+  ],
+  "ci": {
+    "version": "6, 7, 8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hubcarl/easywebpack-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hubcarl/easywebpack-react/issues"
+  },
+  "homepage": "https://github.com/hubcarl/easywebpack-react#readme",
+  "author": "hubcarl@126.com",
+  "license": "MIT"
+}

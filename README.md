@@ -1,2 +1,3 @@
 # easywebpack-react
-react webpack building for easywebpack
+
+TODO: react webpack building for easywebpack
