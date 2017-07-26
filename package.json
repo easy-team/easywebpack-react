@@ -1,6 +1,6 @@
 {
   "name": "easywebpack-react",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "react webpack building solution for easywebpack",
   "keywords": [
     "webpack",
