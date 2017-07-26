@@ -1,12 +1,15 @@
 {
-  "extends": "eslint",
+  "extends": "eslint-plugin-react",
   "env": {
     "node": true,
     "es6": true,
     "mocha": true
   },
   "parserOptions": {
-    "ecmaVersion": 6
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "rules": {
     "indent": [
@@ -33,5 +36,8 @@
       "error",
       "never"
     ]
-  }
+  },
+  "plugins": [
+    "react"
+  ]
 }

@@ -8,21 +8,27 @@
     "react"
   ],
   "dependencies": {
-    "easywebpack": "^0.4.0"
+    "easywebpack": "^0.8.1"
   },
   "devDependencies": {
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-preset-react": "^6.24.1",
     "chai": "^4.0.0",
     "cross-env": "^5.0.1",
-    "eslint": "^3.18.0",
+    "eslint": "^3.19.0",
     "eslint-config-eslint": "^4.0.0",
-    "mocha": "^3.4.2"
+    "eslint-plugin-react": "^7.1.0",
+    "mocha": "^3.4.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   },
   "engines": {
     "node": ">=6.0.0"
   },
   "scripts": {
-    "start": "cross-env NODE_ENV=development node test/build",
-    "build": "cross-env NODE_ENV=production node test/build",
+    "start": "cross-env NODE_SERVER=true NODE_ENV=development node test/build",
+    "build": "cross-env NODE_ENV=development node test/build",
     "lint": "eslint .",
     "fix": "eslint --fix .",
     "test": "mocha test",
