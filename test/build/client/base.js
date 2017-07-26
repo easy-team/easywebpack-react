@@ -5,6 +5,7 @@ const WebpackClientBaseBuilder = require('../base');
 class WebpackBuilder extends WebpackClientBaseBuilder(WebpackClientBuilder) {
   constructor(config) {
     super(config);
+    this.setCommonsChunk('vendor');
     this.setHtml(true);
   }
 }

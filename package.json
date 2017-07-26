@@ -1,6 +1,6 @@
 {
   "name": "easywebpack-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "react webpack building solution for easywebpack",
   "keywords": [
     "webpack",
@@ -29,6 +29,8 @@
   "scripts": {
     "start": "cross-env NODE_SERVER=true NODE_ENV=development node test/build",
     "build": "cross-env NODE_ENV=development node test/build",
+    "easywebpack:start": "cross-env easywebpack server -f test/build/webpack.config.js",
+    "easywebpack:build": "cross-env easywebpack build -f test/build/webpack.config.js",
     "lint": "eslint .",
     "fix": "eslint --fix .",
     "test": "mocha test",
