@@ -1,7 +1,7 @@
 'use strict';
 const ReactWebpack = require('../../index');
 const clientConfig = require('./client');
-// const serverConfig = require('./server');
+const serverConfig = require('./server');
 const BUILD_ENV = process.env.BUILD_ENV;
 const buildConfig = [];
 if (BUILD_ENV === 'client') {
@@ -9,7 +9,7 @@ if (BUILD_ENV === 'client') {
 } else if (BUILD_ENV === 'server') {
   buildConfig.push(serverConfig);
 } else {
-  Array.prototype.push.apply(buildConfig, [clientConfig]);
+  Array.prototype.push.apply(buildConfig, [clientConfig, serverConfig]);
 }
 
 if (process.env.NODE_SERVER) {

@@ -20,18 +20,16 @@ const ReactWebpack = require('easywebpack-react');
 const merge = ReactWebpack.merge;
 const baseDir = path.join(__dirname, '../../../');
 const webpackConfig = {
-  baseDir,
   entry: {
     include: 'app/web/page',
-    exclude: ['app/web/page/test']
-  },
-  html: {
-   include: ['app/web/page/html'],
-   exclude: [],
-   template: 'app/web/view/layout.html',
-   buildDir: 'html',
-  },
-  commonsChunk: ['vendor'],
+    exclude: ['app/web/page/test'],
+    html: {
+     include: ['app/web/page/html'],
+     exclude: [],
+     template: 'app/web/view/layout.html',
+     buildDir: 'html',
+    },
+  }
 };
 const WebpackBaseBuilder = WebpackBuilder => class extends WebpackBuilder {
   constructor(config) {
@@ -40,13 +38,6 @@ const WebpackBaseBuilder = WebpackBuilder => class extends WebpackBuilder {
     this.setAlias('component', 'app/web/component');
     this.setAlias('framework', 'app/web/framework');
     this.setAlias('store', 'app/web/store');
-    this.setStyleLoaderOption({
-      sass: {
-        options: {
-          includePaths: [path.join(this.config.baseDir, 'app/web/asset/style')],
-        }
-      }
-    });
   }
 };
 module.exports = WebpackBaseBuilder;
@@ -85,10 +76,10 @@ if (process.env.NODE_SERVER) {
 
 ```js
 {
-    "scripts": {
-        "build": "cross-env NODE_ENV=development node test/build",
-        "start" : "cross-env NODE_SERVER=true NODE_ENV=development node test/build"
-     }   
+  "scripts": {
+     "build": "cross-env NODE_ENV=development node test/build",
+     "start" : "cross-env NODE_SERVER=true NODE_ENV=development node test/build"
+   }
 }
 ```
 
@@ -100,8 +91,11 @@ npm start
 
 ## Example
 
-see [test/web](test/web) for more detail.
+- see [test/web](test/web) for more detail.
 
+- [egg-react-webpack-boilerplate](https://github.com/hubcarl/egg-react-webpack-boilerplate) support client render and server render.
+
+- you can use [easywebpack-cli](https://github.com/hubcarl/easywebpack-cli) create client render project or create server side render project for react.
 
 ## Development Error
 
