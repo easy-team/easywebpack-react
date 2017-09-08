@@ -19,7 +19,7 @@
     "cross-env": "^5.0.1",
     "eslint": "^4.6.1",
     "eslint-config-eslint": "^4.0.0",
-    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-react": "^7.3.0",
     "mocha": "^3.4.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
