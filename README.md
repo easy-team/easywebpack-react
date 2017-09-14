@@ -1,6 +1,6 @@
 # easywebpack-react
 
-React Webpack Building for easywebpack
+Webpack3 (3.x.x) and Webpack2 (1.x.x) building solution for React, Support client render and server side render build.
 
 ## Install
 
