@@ -12,3 +12,5 @@ dist
 public/
 config/buildConfig.json
 config/manifest.json
+package-lock.json
+
