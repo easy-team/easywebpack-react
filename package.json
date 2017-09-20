@@ -1,6 +1,6 @@
 {
   "name": "easywebpack-react",
-  "version": "3.2.0-rc3",
+  "version": "3.2.0",
   "description": "react webpack building solution for easywebpack",
   "keywords": [
     "webpack",
@@ -8,7 +8,7 @@
     "react"
   ],
   "dependencies": {
-    "easywebpack": "3.2.0-rc3",
+    "easywebpack": "^3.2.0",
     "isomorphic-style-loader": "^4.0.0"
   },
   "devDependencies": {
