@@ -8,7 +8,7 @@ exports.modulereplacement = {
 
 exports.ignore = {
   enable(){
-   return !this.config.cssModule
+    return !this.config.cssModule
   }
 };
 
