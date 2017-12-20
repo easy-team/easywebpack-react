@@ -21,6 +21,8 @@ module.exports = {
     framework: 'test/web/framework',
     store: 'test/web/store'
   },
-  create() {
-  }
+  install: {
+    check: true
+  },
+  create() {}
 };
