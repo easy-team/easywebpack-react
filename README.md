@@ -2,6 +2,17 @@
 
 Webpack3 (3.x.x) and Webpack2 (1.x.x) building solution for React, Support client render and server side render build.
 
+## Featues
+
+![easywebpack](https://github.com/hubcarl/easywebpack/blob/master/docs/images/easywebpack.png)
+
+see [easywebpack](https://github.com/hubcarl/easywebpack)
+
+## Documents
+
+- http://hubcarl.github.io/easywebpack
+- https://zhuanlan.zhihu.com/easywebpack
+
 ## Install
 
 ```bash
@@ -11,57 +22,34 @@ $ npm i easywebpack-react --save-dev
 ## Usage
 
 
-### webpack common config `base.js`
+### `webpack.config.js`
 
 ```js
-'use strict';
-const path = require('path');
-const ReactWebpack = require('easywebpack-react');
-const merge = ReactWebpack.merge;
-const baseDir = path.join(__dirname, '../../../');
-const webpackConfig = {
-  entry: {
-    include: 'app/web/page',
-    exclude: ['app/web/page/test'],
-    html: {
-     include: ['app/web/page/html'],
-     exclude: [],
-     template: 'app/web/view/layout.html',
-     buildDir: 'html',
-    },
-  }
-};
-const WebpackBaseBuilder = WebpackBuilder => class extends WebpackBuilder {
-  constructor(config) {
-    super(merge(webpackConfig, config));
-    this.setAlias('asset', 'app/web/asset');
-    this.setAlias('component', 'app/web/component');
-    this.setAlias('framework', 'app/web/framework');
-    this.setAlias('store', 'app/web/store');
-  }
-};
-module.exports = WebpackBaseBuilder;
+const easywebpack = require('easywebpack-vue');
+const webpack = easywebpack.webpack;
+const merge = easywebpack.merge;
+const baseWebpackConfig = easywebpack.getWebpackConfig({
+    env, // support dev, test, prod 
+    target : 'web', // browser mode build
+    entry:{
+        app: 'src/index.js'
+    }
+});
+module.exports = merge(baseWebpackConfig, {
+   
+})
 ```
 
-### webpack browser config `client.js` (前端渲染)
+### use `webpack` command build
 
-```js
-'use strict';
-const ReactWebpack = require('easywebpack-react');
-const WebpackClientBuilder = ReactWebpack.WebpackClientBuilder;
-const WebpackBaseBuilder = require('../base');
-class ClientBuilder extends WebpackBaseBuilder(WebpackClientBuilder) {
-}
-module.exports = new ClientBuilder().create();
+```bash
+webpack --config webpack.config.js
 ```
 
-
-### command run entry file `build.js`
+### base `easywebpacack-cli` build mode
 
 ```js
-const ReactWebpack = require('easywebpack-react');
-const clientConfig = require('./client');
-const config = [clientConfig]
+const webpackConfig = require('webpack.config.js');
 
 if (process.env.NODE_SERVER) {
   // development mode: webpack building and start webpack hot server
@@ -72,22 +60,6 @@ if (process.env.NODE_SERVER) {
 }
 ```
 
-### commmand run
-
-```js
-{
-  "scripts": {
-     "build": "cross-env NODE_ENV=development node test/build",
-     "start" : "cross-env NODE_SERVER=true NODE_ENV=development node test/build"
-   }
-}
-```
-
-```bash
-
-npm start
-
-```
 
 ## Example
 
@@ -97,11 +69,10 @@ npm start
 
 - you can use [easywebpack-cli](https://github.com/hubcarl/easywebpack-cli) create client render project or create server side render project for react.
 
-## Development Error
+## Questions & Suggestions
 
+Please open an issue [here](https://github.com/hubcarl/easywebpack-vue).
 
-#### Uncaught TypeError: _react2.default.render is not a function
+## License
 
-```bash
-npm i babel-plugin-add-module-exports --save-dev
-```
+[MIT](LICENSE)
