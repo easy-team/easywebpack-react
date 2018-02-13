@@ -1,6 +1,6 @@
 # easywebpack-react
 
-Webpack3 (3.x.x) and Webpack2 (1.x.x) building solution for React, Support client render and server side render build.
+Webpack client render and server side render build solution for React
 
 ## Featues
 
@@ -49,7 +49,7 @@ webpack --config webpack.config.js
 ### base `easywebpacack-cli` build mode
 
 ```js
-const webpackConfig = require('webpack.config.js');
+const webpackConfig = require('./webpack.config.js');
 
 if (process.env.NODE_SERVER) {
   // development mode: webpack building and start webpack hot server
@@ -65,7 +65,11 @@ if (process.env.NODE_SERVER) {
 
 - see [test/web](test/web) for more detail.
 
+- [react-client-render-boilerplate](https://github.com/hubcarl/easywebpack-cli-template/tree/master/boilerplate/react) React client render boilerplate.
+
 - [egg-react-webpack-boilerplate](https://github.com/hubcarl/egg-react-webpack-boilerplate) support client render and server render.
+
+- [egg-react-typescript-boilerplate](https://github.com/hubcarl/egg-react-typescript-boilerplate) Egg + TypeScript + React server render boilerplate.
 
 - you can use [easywebpack-cli](https://github.com/hubcarl/easywebpack-cli) create client render project or create server side render project for react.
 
