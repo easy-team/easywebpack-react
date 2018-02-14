@@ -189,7 +189,7 @@ describe('client.test.js', () => {
         loaders:{
           typescript: {
             options:{
-              configFile,
+              configFile
             }
           }
         }
