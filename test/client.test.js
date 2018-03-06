@@ -59,7 +59,7 @@ describe('client.test.js', () => {
   describe('#webpack framework test', () => {
     it('should egg test', () => {
       const builder = createBuilder({ egg: true });
-      expect(builder.config.proxy).to.true;
+      expect(builder.proxy).to.true;
     });
   });
 
@@ -92,9 +92,7 @@ describe('client.test.js', () => {
     });
     it('should html test', () => {
       const builder = createBuilder({
-        entry: {
-          template: path.join(__dirname, 'layout.html')
-        }
+        template: path.join(__dirname, 'layout.html')
       });
       const webpackConfig = builder.create();
       const html = webpackConfig.plugins.filter(plugin => {
@@ -105,21 +103,21 @@ describe('client.test.js', () => {
   });
 
   describe('#webpack publicPath test', () => {
-    const cdnUrl = 'http://easywebpack.cn/public';
+    const cdnUrl = 'http://easywebpack.cn';
     it('should dev cdn config test', () => {
       const builder = createBuilder({ debug: true, env: 'dev', cdn: { url: cdnUrl} });
       const webpackConfig = builder.create();
-      expect(webpackConfig.output.publicPath).to.equal(cdnUrl + '/');
+      expect(webpackConfig.output.publicPath).to.equal(cdnUrl + '/public/');
     });
     it('should dev cdn dynamicDir config test', () => {
       const builder = createBuilder({ debug: true, env: 'dev', cdn: { url: cdnUrl, dynamicDir: 'cdn'} });
       const webpackConfig = builder.create();
-      expect(webpackConfig.output.publicPath).to.equal(cdnUrl + '/cdn/');
+      expect(webpackConfig.output.publicPath).to.equal(cdnUrl + '/cdn/public/');
     });
     it('should dev cdn config test', () => {
       const builder = createBuilder({ debug: true, env: 'dev', cdn: { url: cdnUrl} });
       const webpackConfig = builder.create();
-      expect(webpackConfig.output.publicPath).to.equal(cdnUrl + '/');
+      expect(webpackConfig.output.publicPath).to.equal(cdnUrl + '/public/');
     });
 
     it('should dev publicPath abspath config test', () => {
@@ -131,7 +129,7 @@ describe('client.test.js', () => {
     it('should dev publicPath config test', () => {
       const builder = createBuilder({ debug: true, env: 'dev', publicPath: '/static' });
       const webpackConfig = builder.create();
-      expect(webpackConfig.output.publicPath).to.equal(builder.host + '/static/');
+      expect(webpackConfig.output.publicPath).to.equal('/static/');
     });
 
     it('should dev publicPath useHost false config test', () => {
@@ -158,7 +156,7 @@ describe('client.test.js', () => {
       const builder = createBuilder({ env: 'dev', lib: ['mocha'] });
       const webpackConfig = builder.create();
       const commonsChunks = webpackConfig.plugins.filter(plugin =>{
-        return plugin.constructor.name === 'CommonsChunkPlugin';
+        return plugin.constructor.name === 'SplitChunksPlugin' || plugin.constructor.name === 'RuntimeChunkPlugin';
       });
       expect(webpackConfig.entry).to.have.property('common');
       expect(commonsChunks.length).to.equal(2);

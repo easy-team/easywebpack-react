@@ -7,8 +7,8 @@
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/easywebpack-vue.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/easywebpack-vue
+[npm-image]: https://img.shields.io/npm/v/easywebpack-react.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/easywebpack-react
 [travis-image]: https://img.shields.io/travis/hubcarl/easywebpack-react.svg?style=flat-square
 [travis-url]: https://travis-ci.org/hubcarl/easywebpack-react
 [codecov-image]: https://img.shields.io/codecov/c/github/hubcarl/easywebpack-react.svg?style=flat-square
@@ -21,6 +21,10 @@
 [download-url]: https://npmjs.org/package/easywebpack-react
 
 Webpack client render and server side render build solution for React
+
+- Webpack 4: easywebpack-react: 4.x.x
+- Webpack 3: easywebpack-react: 3.x.x
+
 
 ## Featues
 
