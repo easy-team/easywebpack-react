@@ -22,8 +22,8 @@
 
 Webpack client render and server side render build solution for React
 
-- Webpack 4: easywebpack-react: 4.x.x
-- Webpack 3: easywebpack-react: 3.x.x
+- easywebpack-react ^4.x.x > webpack 4.x.x
+- easywebpack-react ^3.x.x > webpack 3.x.x 
 
 
 ## Featues
