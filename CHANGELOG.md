@@ -1,3 +1,14 @@
+<a name="3.6.2"></a>
+## [3.6.2](https://github.com/hubcarl/easywebpack-react/compare/3.6.0...3.6.2) (2018-06-28)
+
+
+### Bug Fixes
+
+*  server import react-hot-loader problem when use same .babelrc config ([61c2fad](https://github.com/hubcarl/easywebpack-react/commit/61c2fad))
+* entry object not extMatch ([98e5837](https://github.com/hubcarl/easywebpack-react/commit/98e5837))
+
+
+
 <a name="3.6.0"></a>
 # [3.6.0](https://github.com/hubcarl/easywebpack-react/compare/3.2.4...3.6.0) (2018-01-17)
 
