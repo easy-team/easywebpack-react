@@ -107,15 +107,15 @@ describe('client.test.js', () => {
     it('should dev cdn config test', () => {
       const builder = createBuilder({ debug: true, env: 'dev', cdn: { url: cdnUrl} });
       const webpackConfig = builder.create();
-      expect(webpackConfig.output.publicPath).to.equal(cdnUrl + '/public/');
+      expect(webpackConfig.output.publicPath).to.equal('/public/');
     });
-    it('should dev cdn dynamicDir config test', () => {
-      const builder = createBuilder({ debug: true, env: 'dev', cdn: { url: cdnUrl, dynamicDir: 'cdn'} });
+    it('should test cdn dynamicDir config test', () => {
+      const builder = createBuilder({ debug: true, env: 'test', cdn: { url: cdnUrl, dynamicDir: 'cdn'} });
       const webpackConfig = builder.create();
       expect(webpackConfig.output.publicPath).to.equal(cdnUrl + '/cdn/public/');
     });
-    it('should dev cdn config test', () => {
-      const builder = createBuilder({ debug: true, env: 'dev', cdn: { url: cdnUrl} });
+    it('should test cdn config test', () => {
+      const builder = createBuilder({ debug: true, env: 'test', cdn: { url: cdnUrl} });
       const webpackConfig = builder.create();
       expect(webpackConfig.output.publicPath).to.equal(cdnUrl + '/public/');
     });
@@ -152,7 +152,7 @@ describe('client.test.js', () => {
   });
 
   describe('#webpack commonsChunk test', () => {
-    it('should dev cdn config test', () => {
+    it('should commonsChunk config test', () => {
       const builder = createBuilder({ env: 'dev', lib: ['mocha'] });
       const webpackConfig = builder.create();
       const commonsChunks = webpackConfig.plugins.filter(plugin =>{

@@ -1,14 +1,5 @@
 'use strict';
 
-exports.modulereplacement = {
-  enable(){
-    return !this.config.cssModule
-  }
-};
+exports.modulereplacement = false;
 
-exports.ignore = {
-  enable(){
-    return !this.config.cssModule
-  }
-};
-
+exports.ignore = false;
