@@ -1,3 +1,13 @@
+<a name="4.1.0"></a>
+## [4.1.0](https://github.com/hubcarl/easywebpack-react/compare/4.0.0...4.1.0) (2018-09-04)
+
+
+### Features
+
+* upgrade webpack latest version for mini-css-extract-plugin ([f29c399](https://github.com/hubcarl/easywebpack-react/commit/f29c399))
+
+
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/hubcarl/easywebpack-react/compare/3.6.0...4.0.0) (2018-03-07)
 
