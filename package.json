@@ -1,6 +1,6 @@
 {
   "name": "easywebpack-react",
-  "version": "4.1.1",
+  "version": "4.2.0",
   "description": "webpack react building solution for easywebpack",
   "keywords": [
     "webpack",
@@ -49,7 +49,7 @@
     "tool"
   ],
   "ci": {
-    "version": "6, 8, 9"
+    "version": "8, 9"
   },
   "nyc": {
     "exclude": [

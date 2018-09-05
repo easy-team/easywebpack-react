@@ -1,3 +1,13 @@
+<a name="4.2.0"></a>
+# [4.2.0](https://github.com/hubcarl/easywebpack-react/compare/4.1.1...4.2.0) (2018-09-05)
+
+
+### Features
+
+* support css module for .module.css files ([9a220e1](https://github.com/hubcarl/easywebpack-react/commit/9a220e1))
+
+
+
 <a name="4.1.1"></a>
 ## [4.1.1](https://github.com/hubcarl/easywebpack-react/compare/4.0.0...4.1.1) (2018-09-04)
 
