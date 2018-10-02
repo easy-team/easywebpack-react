@@ -15,4 +15,5 @@ config/manifest.json
 package-lock.json
 .nyc_output
 package-lock.json
+yarn.lock
 

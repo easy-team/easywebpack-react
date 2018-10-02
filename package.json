@@ -1,6 +1,6 @@
 {
   "name": "easywebpack-react",
-  "version": "4.3.0-rc.1",
+  "version": "4.3.0-rc.2",
   "description": "webpack react building solution for easywebpack",
   "keywords": [
     "webpack",
@@ -10,6 +10,7 @@
   "dependencies": {
     "easywebpack": "next",
     "react-hot-loader": "^4.3.5",
+    "react-entry-template-loader": "^1.0.0",
     "isomorphic-style-loader": "^4.0.0"
   },
   "devDependencies": {
