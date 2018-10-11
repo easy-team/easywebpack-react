@@ -9,12 +9,12 @@
 
 [npm-image]: https://img.shields.io/npm/v/easywebpack-react.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/easywebpack-react
-[travis-image]: https://img.shields.io/travis/hubcarl/easywebpack-react.svg?style=flat-square
-[travis-url]: https://travis-ci.org/hubcarl/easywebpack-react
-[codecov-image]: https://img.shields.io/codecov/c/github/hubcarl/easywebpack-react.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/hubcarl/easywebpack-react?branch=master
-[david-image]: https://img.shields.io/david/hubcarl/easywebpack-react.svg?style=flat-square
-[david-url]: https://david-dm.org/hubcarl/easywebpack-react
+[travis-image]: https://img.shields.io/travis/easy-team/easywebpack-react.svg?style=flat-square
+[travis-url]: https://travis-ci.org/easy-team/easywebpack-react
+[codecov-image]: https://img.shields.io/codecov/c/github/easy-team/easywebpack-react.svg?style=flat-square
+[codecov-url]: https://codecov.io/github/easy-team/easywebpack-react?branch=master
+[david-image]: https://img.shields.io/david/easy-team/easywebpack-react.svg?style=flat-square
+[david-url]: https://david-dm.org/easy-team/easywebpack-react
 [snyk-image]: https://snyk.io/test/npm/easywebpack-react/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/easywebpack-react
 [download-image]: https://img.shields.io/npm/dm/easywebpack-react.svg?style=flat-square
@@ -28,13 +28,13 @@ Webpack client render and server side render build solution for React
 
 ## Featues
 
-![easywebpack](https://github.com/hubcarl/easywebpack/blob/master/docs/images/easywebpack.png)
+![easywebpack](https://github.com/easy-team/easywebpack/blob/master/docs/images/easywebpack.png)
 
-see [easywebpack](https://github.com/hubcarl/easywebpack)
+see [easywebpack](https://github.com/easy-team/easywebpack)
 
 ## Documents
 
-- http://hubcarl.github.io/easywebpack
+- https://www.yuque.com/easy-team/easywebpack
 - https://zhuanlan.zhihu.com/easywebpack
 
 ## Install
@@ -89,17 +89,17 @@ if (process.env.NODE_SERVER) {
 
 - see [test/web](test/web) for more detail.
 
-- [react-client-render-boilerplate](https://github.com/hubcarl/easywebpack-cli-template/tree/master/boilerplate/react) React client render boilerplate.
+- [react-client-render-boilerplate](https://github.com/easy-team/easywebpack-cli-template/tree/master/boilerplate/react) React client render boilerplate.
 
-- [egg-react-webpack-boilerplate](https://github.com/hubcarl/egg-react-webpack-boilerplate) support client render and server render.
+- [egg-react-webpack-boilerplate](https://github.com/easy-team/egg-react-webpack-boilerplate) support client render and server render.
 
-- [egg-react-typescript-boilerplate](https://github.com/hubcarl/egg-react-typescript-boilerplate) Egg + TypeScript + React server render boilerplate.
+- [egg-react-typescript-boilerplate](https://github.com/easy-team/egg-react-typescript-boilerplate) Egg + TypeScript + React server render boilerplate.
 
-- you can use [easywebpack-cli](https://github.com/hubcarl/easywebpack-cli) create client render project or create server side render project for react.
+- you can use [easywebpack-cli](https://github.com/easy-team/easywebpack-cli) create client render project or create server side render project for react.
 
 ## Questions & Suggestions
 
-Please open an issue [here](https://github.com/hubcarl/easywebpack-react).
+Please open an issue [here](https://github.com/easy-team/easywebpack-react).
 
 ## License
 
