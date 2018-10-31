@@ -1,3 +1,18 @@
+<a name="4.3.1"></a>
+## [4.3.1](https://github.com/easy-team/easywebpack-react/compare/4.2.0...4.3.1) (2018-10-31)
+
+
+### Bug Fixes
+
+* css module module.rules 配置异常 ([3cdbea1](https://github.com/easy-team/easywebpack-react/commit/3cdbea1))
+
+
+### Features
+
+* support react entry template loader ([0c44af7](https://github.com/easy-team/easywebpack-react/commit/0c44af7))
+
+
+
 <a name="4.2.0"></a>
 # [4.2.0](https://github.com/hubcarl/easywebpack-react/compare/4.1.1...4.2.0) (2018-09-05)
 
