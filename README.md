@@ -20,17 +20,18 @@
 [download-image]: https://img.shields.io/npm/dm/easywebpack-react.svg?style=flat-square
 [download-url]: https://npmjs.org/package/easywebpack-react
 
-Webpack client render and server side render build solution for React
+React client render and server side render build solution for Webpack
 
 - easywebpack-react ^4.x.x > webpack 4.x.x
 - easywebpack-react ^3.x.x > webpack 3.x.x 
 
-
 ## Featues
 
-![easywebpack](https://github.com/easy-team/easywebpack/blob/master/docs/images/easywebpack.png)
-
-see [easywebpack](https://github.com/easy-team/easywebpack)
+- ✔︎ React Client Render and Server Side Render Build Mode
+- ✔︎ React Single Appliaction and React Mutil Appliaction Build Mode
+- ✔︎ Hot Reload, Css Hot Reload, Code Splitting, High Speed, Cache Build, Thread Build
+- ✔︎ ES5/ES6/ES7, TypeScript, DLL, Css Module, Dynamic Import, AntD Dynamic Import
+- ✔︎ Powerful Tool Chain [easywebpack-cli](https://github.com/easy-team/easywebpack-cli)
 
 ## Documents
 
@@ -43,51 +44,73 @@ see [easywebpack](https://github.com/easy-team/easywebpack)
 $ npm i easywebpack-react --save-dev
 ```
 
-## Usage
+## QuickStart
 
+- Install Command Line
 
-### `webpack.config.js`
+```bash
+$ npm i easywebpack-cli -g 
+```
+
+- Initalize Application
+
+```bash
+$ easy init
+```
+
+- Running Application
+
+```bash
+$ npm start
+```
+
+## Configuration
+
+### Write Webpack Config `webpack.config.js`
 
 ```js
 const easywebpack = require('easywebpack-react');
 const webpack = easywebpack.webpack;
 const merge = easywebpack.merge;
-const baseWebpackConfig = easywebpack.getWebpackConfig({
+const webpackConfig = easywebpack.getWebpackConfig({
     env, // support dev, test, prod 
     target : 'web', // browser mode build
     entry:{
-        app: 'src/index.js'
+      app: 'src/index.js'
+    },
+    customize(webpackConfig) {
+      // ... customize webpack config
+      return webpackConfig;
     }
 });
-module.exports = merge(baseWebpackConfig, {
-   
-})
 ```
 
-### use `webpack` command build
+### Webpack Build
+
+```bash
+easy build --webpack
+```
+
+OR
 
 ```bash
 webpack --config webpack.config.js
 ```
 
-### base `easywebpacack-cli` build mode
+
+### Application Development & Building
 
 ```js
 const webpackConfig = require('./webpack.config.js');
-
-if (process.env.NODE_SERVER) {
-  // development mode: webpack building and start webpack hot server
-  ReactWebpack.server(config);
-} else {
-  // build file to disk
-  ReactWebpack.build(config);
-}
-```
+const easywebpack = require('easywebpack-react');
+const webpackTool = new WebpackTool();
+// development mode
+easywebpack.server(webpackConfig);
+// build file to disk
+easywebpack.build(webpackConfig);
 
 
 ## Example
-
-- see [test/web](test/web) for more detail.
 
 - [react-client-render-boilerplate](https://github.com/easy-team/easywebpack-cli-template/tree/master/boilerplate/react) React client render boilerplate.
 
@@ -96,6 +119,7 @@ if (process.env.NODE_SERVER) {
 - [egg-react-typescript-boilerplate](https://github.com/easy-team/egg-react-typescript-boilerplate) Egg + TypeScript + React server render boilerplate.
 
 - you can use [easywebpack-cli](https://github.com/easy-team/easywebpack-cli) create client render project or create server side render project for react.
+
 
 ## Questions & Suggestions
 
