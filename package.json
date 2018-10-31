@@ -10,6 +10,7 @@
   "dependencies": {
     "easywebpack": "next",
     "babel-preset-react": "^6.24.1",
+    "eslint-plugin-react": "^7.1.0",
     "react-hot-loader": "^4.3.5",
     "react-entry-template-loader": "^1.0.0",
     "isomorphic-style-loader": "^4.0.0"
