@@ -1,10 +1,20 @@
+<a name="4.4.0"></a>
+# [4.4.0](https://github.com/easy-team/easywebpack-react/compare/4.3.1...4.4.0) (2018-11-01)
+
+
+### Features
+
+* add babel-preset-react eslint-plugin-react ([050bd4f](https://github.com/easy-team/easywebpack-react/commit/050bd4f))
+* add default react babel config ([5d33304](https://github.com/easy-team/easywebpack-react/commit/5d33304))
+
+
 <a name="4.3.1"></a>
 ## [4.3.1](https://github.com/easy-team/easywebpack-react/compare/4.2.0...4.3.1) (2018-10-31)
 
 
 ### Bug Fixes
 
-* css module module.rules 配置异常 ([3cdbea1](https://github.com/easy-team/easywebpack-react/commit/3cdbea1))
+* css module module.rules config error ([3cdbea1](https://github.com/easy-team/easywebpack-react/commit/3cdbea1))
 
 
 ### Features
