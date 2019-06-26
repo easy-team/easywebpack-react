@@ -151,17 +151,6 @@ describe('client.test.js', () => {
     });
   });
 
-  describe('#webpack commonsChunk test', () => {
-    it('should commonsChunk config test', () => {
-      const builder = createBuilder({ env: 'dev', lib: ['mocha'] });
-      const webpackConfig = builder.create();
-      const commonsChunks = webpackConfig.plugins.filter(plugin =>{
-        return plugin.constructor.name === 'SplitChunksPlugin' || plugin.constructor.name === 'RuntimeChunkPlugin';
-      });
-      expect(webpackConfig.entry).to.have.property('common');
-      expect(commonsChunks.length).to.equal(2);
-    });
-  });
   describe('#webpack typescript test', () => {
     it('should default typescript enable test', () => {
       const builder = createBuilder();
@@ -178,7 +167,7 @@ describe('client.test.js', () => {
       });
       const webpackConfig = builder.create();
       const tsLoader = getLoaderByName('ts', webpackConfig.module.rules);
-      expect(tsLoader.use[0].loader).to.equal('ts-loader');
+      expect(tsLoader.use[2].loader).to.equal('ts-loader');
     });
 
     it('should typescript config test', () => {
@@ -194,8 +183,9 @@ describe('client.test.js', () => {
       });
       const webpackConfig = builder.create();
       const tsLoader = getLoaderByName('ts', webpackConfig.module.rules);
-      expect(tsLoader.use[0].loader).to.equal('ts-loader');
-      expect(tsLoader.use[0].options.configFile).to.equal(configFile);
+      expect(tsLoader.use[0].loader).to.equal('cache-loader');
+      expect(tsLoader.use[2].loader).to.equal('ts-loader');
+      expect(tsLoader.use[2].options.configFile).to.equal(configFile);
     });
 
     it('should tslint enable test', () => {
@@ -213,13 +203,13 @@ describe('client.test.js', () => {
   describe('#native webpack test', () => {
     it('should default getWebpackConfig client test', () => {
       const easywebpack = require('../');
-      const webpackConfig = easywebpack.getWebpackConfig({ type: 'client' });
+      const webpackConfig = easywebpack.getWebpackConfig({ target: 'web' });
       expect(webpackConfig.target).to.equal('web');
     });
 
     it('should default getWebpackConfig server test', () => {
       const easywebpack = require('../');
-      const webpackConfig = easywebpack.getWebpackConfig({ type: 'server' });
+      const webpackConfig = easywebpack.getWebpackConfig({ target: 'node' });
       expect(webpackConfig.target).to.equal('node');
     });
   });
