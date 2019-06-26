@@ -1,6 +1,6 @@
 'use strict';
 const ReactSSRDynamicChunkPlugin = require('./plugin/react-ssr-dynamic-chunk-webpack-plugin');
-exports.vuessrchunk = {
+exports.reactssrchunk = {
   type: ['server'],
   name: new ReactSSRDynamicChunkPlugin(),
   args: {
