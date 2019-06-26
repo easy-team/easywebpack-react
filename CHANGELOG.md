@@ -1,3 +1,13 @@
+<a name="4.4.2"></a>
+## [4.4.2](https://github.com/easy-team/easywebpack-react/compare/4.4.1...4.4.2) (2019-06-26)
+
+
+### Bug Fixes
+
+* async chunk write disk for dynamic import ([891c882](https://github.com/easy-team/easywebpack-react/commit/891c882))
+
+
+
 <a name="4.4.0"></a>
 # [4.4.0](https://github.com/easy-team/easywebpack-react/compare/4.3.1...4.4.0) (2018-11-01)
 
