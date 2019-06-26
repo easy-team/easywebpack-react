@@ -1,3 +1,13 @@
+<a name="4.4.3"></a>
+## [4.4.3](https://github.com/easy-team/easywebpack-react/compare/4.4.2...4.4.3) (2019-06-26)
+
+
+### Bug Fixes
+
+* rename dynamic plugin label name ([e0aeb74](https://github.com/easy-team/easywebpack-react/commit/e0aeb74))
+
+
+
 <a name="4.4.2"></a>
 ## [4.4.2](https://github.com/easy-team/easywebpack-react/compare/4.4.1...4.4.2) (2019-06-26)
 
