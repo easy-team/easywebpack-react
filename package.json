@@ -1,6 +1,6 @@
 {
-  "name": "easywebpack-react",
-  "version": "4.5.0-alpha.1",
+  "name": "@easy-team/easywebpack-react",
+  "version": "4.0.0-alpha.1",
   "description": "React client render and server side render build solution for Webpack",
   "keywords": [
     "webpack",
@@ -8,24 +8,22 @@
     "react"
   ],
   "dependencies": {
-    "easywebpack": "next",
-    "babel-preset-react": "^6.24.1",
+    "@easy-team/easywebpack": "^4.0.0-alpha.1",
+    "@babel/preset-react": "^7.0.0",
     "eslint-plugin-react": "^7.1.0",
     "react-hot-loader": "^4.3.5",
     "react-entry-template-loader": "^1.0.0",
-    "isomorphic-style-loader": "^4.0.0"
+    "isomorphic-style-loader": "^5.0.0"
   },
   "devDependencies": {
     "chai": "^4.0.0",
     "codecov": "^3.0.0",
-    "conventional-changelog-cli": "^1.3.5",
+    "conventional-changelog-cli": "^2.0.0",
     "cross-env": "^5.0.1",
-    "eslint": "^4.6.1",
-    "eslint-config-eslint": "^4.0.0",
+    "eslint-config-eslint": "^5.0.0",
     "eslint-plugin-react": "^7.3.0",
-    "html-webpack-plugin": "^2.30.1",
-    "mocha": "^3.4.2",
-    "nyc": "^11.1.0",
+    "mocha": "^6.0.0",
+    "nyc": "^14.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },

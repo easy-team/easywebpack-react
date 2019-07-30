@@ -22,8 +22,9 @@
 
 React client render and server side render build solution for Webpack
 
-- easywebpack-react ^4.x.x > webpack 4.x.x
-- easywebpack-react ^3.x.x > webpack 3.x.x 
+- @easy-team/easywebpack-react ^4.x.x > Webpack 4.x.x + Babel 7 
+- easywebpack-react ^4.x.x > Webpack 4.x.x + Babel 6
+- easywebpack-react ^3.x.x > Webpack 3.x.x + Babel 6
 
 ## Featues
 
@@ -41,7 +42,7 @@ React client render and server side render build solution for Webpack
 ## Install
 
 ```bash
-$ npm i easywebpack-react --save-dev
+$ npm i @easy-team/easywebpack-react --save-dev
 ```
 
 ## QuickStart
@@ -102,7 +103,7 @@ webpack --config webpack.config.js
 
 ```js
 const webpackConfig = require('./webpack.config.js');
-const easywebpack = require('easywebpack-react');
+const easywebpack = require('@easy-team/easywebpack-react');
 const webpackTool = new WebpackTool();
 // development mode
 easywebpack.server(webpackConfig);

@@ -1,14 +1,14 @@
 {
   "presets": [
-    "react", ["env", {
+    "@babel/preset-react", ["@babel/preset-env", {
       "modules": false
     }]
   ],
   "plugins": [
-    "transform-object-assign",
-    "syntax-dynamic-import",
-    "transform-object-rest-spread",
-    "transform-runtime"
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-transform-runtime"
   ],
   "env": {
     "development": {
