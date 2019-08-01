@@ -1,6 +1,6 @@
 {
   "name": "easywebpack-react",
-  "version": "4.4.3",
+  "version": "4.4.4",
   "description": "React client render and server side render build solution for Webpack",
   "keywords": [
     "webpack",
@@ -8,12 +8,13 @@
     "react"
   ],
   "dependencies": {
-    "easywebpack": "^4.9.0",
+    "@hot-loader/react-dom": "^16.8.6",
     "babel-preset-react": "^6.24.1",
+    "easywebpack": "^4.9.0",
     "eslint-plugin-react": "^7.1.0",
-    "react-hot-loader": "^4.3.5",
+    "isomorphic-style-loader": "^4.0.0",
     "react-entry-template-loader": "^1.0.0",
-    "isomorphic-style-loader": "^4.0.0"
+    "react-hot-loader": "^4.3.5"
   },
   "devDependencies": {
     "chai": "^4.0.0",
