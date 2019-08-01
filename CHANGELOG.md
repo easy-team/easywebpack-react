@@ -1,3 +1,13 @@
+<a name="4.4.4"></a>
+## [4.4.4](https://github.com/easy-team/easywebpack-react/compare/4.4.3...4.4.4) (2019-08-01)
+
+
+### Bug Fixes
+
+* react-hot-loader console warning ([d499425](https://github.com/easy-team/easywebpack-react/commit/d499425))
+
+
+
 <a name="4.4.3"></a>
 ## [4.4.3](https://github.com/easy-team/easywebpack-react/compare/4.4.2...4.4.3) (2019-06-26)
 
