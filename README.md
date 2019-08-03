@@ -22,9 +22,9 @@
 
 React client render and server side render build solution for Webpack
 
-- @easy-team/easywebpack-react ^4.x.x > Webpack 4.x.x + Babel 7 
-- easywebpack-react ^4.x.x > Webpack 4.x.x + Babel 6
-- easywebpack-react ^3.x.x > Webpack 3.x.x + Babel 6
+- @easy-team/easywebpack-react ^4.0.0 > Webpack ^4.0.0 + Babel 7 
+- easywebpack-react ^4.0.0 > Webpack ^4.0.0 + Babel 6
+- easywebpack-react ^3.0.0 > Webpack ^3.0.0 + Babel 6
 
 ## Featues
 
@@ -70,7 +70,7 @@ $ npm start
 ### Write Webpack Config `webpack.config.js`
 
 ```js
-const easywebpack = require('easywebpack-react');
+const easywebpack = require('@easy-team/easywebpack-react');
 const webpack = easywebpack.webpack;
 const merge = easywebpack.merge;
 const webpackConfig = easywebpack.getWebpackConfig({
