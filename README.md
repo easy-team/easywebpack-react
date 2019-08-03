@@ -108,7 +108,7 @@ const webpackTool = new WebpackTool();
 easywebpack.server(webpackConfig);
 // build file to disk
 easywebpack.build(webpackConfig);
-
+```
 
 ## Example
 
