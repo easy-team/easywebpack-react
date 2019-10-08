@@ -1,6 +1,6 @@
 'use strict';
 const expect = require('chai').expect;
-const easywebpack = require('easywebpack');
+const easywebpack = require('@easy-team/easywebpack');
 const webpack = easywebpack.webpack;
 const merge = easywebpack.merge;
 const WebpackServerBuilder = require('../lib/server');

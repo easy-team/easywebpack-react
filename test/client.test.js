@@ -1,7 +1,7 @@
 'use strict';
 const path = require('path');
 const expect = require('chai').expect;
-const easywebpack = require('easywebpack');
+const easywebpack = require('@easy-team/easywebpack');
 const webpack = easywebpack.webpack;
 const merge = easywebpack.merge;
 const WebpackClientBuilder = require('../lib/client');
@@ -88,7 +88,7 @@ describe('client.test.js', () => {
     it('should dev hot test', () => {
       const builder = createBuilder({ env: 'dev', log: true });
       const webpackConfig = builder.create();
-      expect(webpackConfig.entry['client.test'].length).to.equal(3);
+      expect(webpackConfig.entry['client.test'].length).to.equal(4);
     });
     it('should html test', () => {
       const builder = createBuilder({
