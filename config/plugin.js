@@ -7,6 +7,10 @@ exports.reactssrchunk = {
   }
 };
 
+exports.extract = {
+  env: ['dev', 'test', 'prod'],
+};
+
 exports.modulereplacement = false;
 
 exports.ignore = false;
