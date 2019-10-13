@@ -1,6 +1,6 @@
 {
   "name": "@easy-team/easywebpack-react",
-  "version": "4.0.2",
+  "version": "4.1.0",
   "description": "React client render and server side render build solution for Webpack",
   "keywords": [
     "webpack",
@@ -9,7 +9,7 @@
   ],
   "dependencies": {
     "@babel/preset-react": "^7.0.0",
-    "@easy-team/easywebpack": "^4.0.0",
+    "@easy-team/easywebpack": "^4.1.0",
     "@hot-loader/react-dom": "^16.8.6",
     "babel-plugin-import": "^1.12.0",
     "eslint-plugin-react": "^7.1.0",
