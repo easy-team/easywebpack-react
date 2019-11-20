@@ -1,3 +1,21 @@
+## [4.1.1](https://github.com/easy-team/easywebpack-react/compare/4.4.3...4.1.1) (2019-11-20)
+
+
+### Bug Fixes
+
+* add missing babel plugin config ([4b7f9e9](https://github.com/easy-team/easywebpack-react/commit/4b7f9e9))
+* css inline flicker ([91b9b0f](https://github.com/easy-team/easywebpack-react/commit/91b9b0f))
+* easywebpck to @easy-team/easywebpack ([7cee948](https://github.com/easy-team/easywebpack-react/commit/7cee948))
+* ssr render async load component file path https://github.com/easy-team/egg-react-webpack-boilerplate/issues/44/ ([fda1d13](https://github.com/easy-team/easywebpack-react/commit/fda1d13))
+
+
+### Features
+
+* auto check css extract ([2293381](https://github.com/easy-team/easywebpack-react/commit/2293381))
+* babel upgrade .babelrc to babel.config.js ([4f965bd](https://github.com/easy-team/easywebpack-react/commit/4f965bd))
+
+
+
 # [4.1.0](https://github.com/easy-team/easywebpack-react/compare/4.4.3...4.1.0) (2019-10-13)
 
 
