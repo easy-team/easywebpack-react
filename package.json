@@ -1,6 +1,6 @@
 {
   "name": "easywebpack-react",
-  "version": "4.4.4",
+  "version": "4.4.5",
   "description": "React client render and server side render build solution for Webpack",
   "keywords": [
     "webpack",

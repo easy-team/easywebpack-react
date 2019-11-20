@@ -1,3 +1,13 @@
+<a name="4.4.5"></a>
+## [4.4.5](https://github.com/easy-team/easywebpack-react/compare/4.4.4...4.4.5) (2019-11-20)
+
+
+### Bug Fixes
+
+* https://github.com/easy-team/egg-react-webpack-boilerplate/issues/44 ([05b407f](https://github.com/easy-team/easywebpack-react/commit/05b407f))
+
+
+
 <a name="4.4.4"></a>
 ## [4.4.4](https://github.com/easy-team/easywebpack-react/compare/4.4.3...4.4.4) (2019-08-01)
 
