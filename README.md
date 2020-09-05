@@ -42,7 +42,7 @@ React client render and server side render build solution for Webpack
 ## Install
 
 ```bash
-$ npm i @easy-team/easywebpack-react --save-dev
+$ npm i easywebpack-react --save-dev
 ```
 
 ## QuickStart
@@ -70,7 +70,7 @@ $ npm start
 ### Write Webpack Config `webpack.config.js`
 
 ```js
-const easywebpack = require('@easy-team/easywebpack-react');
+const easywebpack = require('easywebpack-react');
 const webpack = easywebpack.webpack;
 const merge = easywebpack.merge;
 const webpackConfig = easywebpack.getWebpackConfig({
@@ -103,7 +103,7 @@ webpack --config webpack.config.js
 
 ```js
 const webpackConfig = require('./webpack.config.js');
-const easywebpack = require('@easy-team/easywebpack-react');
+const easywebpack = require('easywebpack-react');
 const webpackTool = new WebpackTool();
 // development mode
 easywebpack.server(webpackConfig);

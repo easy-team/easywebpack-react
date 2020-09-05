@@ -1,7 +1,7 @@
 'use strict';
 const path = require('path');
 const expect = require('chai').expect;
-const easywebpack = require('@easy-team/easywebpack');
+const easywebpack = require('easywebpack');
 const webpack = easywebpack.webpack;
 const merge = easywebpack.merge;
 const WebpackClientBuilder = require('../lib/client');
