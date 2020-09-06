@@ -13,13 +13,13 @@ class ReactSSRDynamicChunkPlugin {
       const buildPath = compilation.options.output.path;
          
       
-      compilation.chunks.forEach(chunk => {
+      [...compilation.chunks].forEach(chunk => {
         if (!this.opts.chunk) {
           return;
         }
 
-        const chunks = chunk.files || [];
-        const asyncChunks = chunk.getAllAsyncChunks();
+        const chunks = [ ...chunk.files];
+        const asyncChunks = [ ...chunk.getAllAsyncChunks()];
         const mainChunkFile = chunks.length > 0 ? chunks[0] : null; 
         const mainChunkDir = mainChunkFile ? path.dirname(mainChunkFile) : null; 
         asyncChunks && asyncChunks.forEach(asyncChunk => {
