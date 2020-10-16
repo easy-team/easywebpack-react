@@ -1,3 +1,12 @@
+# [5.0.0](https://github.com/easy-team/easywebpack-react/compare/4.4.3...5.0.0) (2020-10-16)
+
+
+### Features
+
+* update easywebpack 5 deps ([f9d4c9c](https://github.com/easy-team/easywebpack-react/commit/f9d4c9cf752d68f9342f7d5a20e3e70608a4f825))
+
+
+
 ## [4.1.1](https://github.com/easy-team/easywebpack-react/compare/4.4.3...4.1.1) (2019-11-20)
 
 

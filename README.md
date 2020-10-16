@@ -22,6 +22,7 @@
 
 React client render and server side render build solution for Webpack
 
+- easywebpack-react ^5.0.0 > Webpack ^5.0.0 + Babel 7
 - @easy-team/easywebpack-react ^4.0.0 > Webpack ^4.0.0 + Babel 7 
 - easywebpack-react ^4.0.0 > Webpack ^4.0.0 + Babel 6
 - easywebpack-react ^3.0.0 > Webpack ^3.0.0 + Babel 6

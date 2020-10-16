@@ -1,6 +1,6 @@
 {
   "name": "easywebpack-react",
-  "version": "5.0.0-beta.2",
+  "version": "5.0.0",
   "description": "React client render and server side render build solution for Webpack",
   "keywords": [
     "webpack",
@@ -11,7 +11,7 @@
     "@babel/preset-react": "^7.0.0",
     "@hot-loader/react-dom": "^16.8.6",
     "babel-plugin-import": "^1.12.0",
-    "easywebpack": "^5.0.0-beta.1",
+    "easywebpack": "^5.0.0",
     "eslint-plugin-react": "^7.1.0",
     "isomorphic-style-loader": "^5.0.0",
     "react-entry-template-loader": "^1.0.0",
@@ -30,7 +30,7 @@
     "react-dom": "^16.0.0"
   },
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=10.0.0"
   },
   "scripts": {
     "lint": "eslint .",
@@ -49,7 +49,7 @@
     "tool"
   ],
   "ci": {
-    "version": "8, 10, 12, 14"
+    "version": "10, 12, 14"
   },
   "nyc": {
     "exclude": [
