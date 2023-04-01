@@ -1,6 +1,6 @@
 {
   "name": "easywebpack-react",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "React client render and server side render build solution for Webpack",
   "keywords": [
     "webpack",
@@ -63,9 +63,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/easy-team/easywebpack-react.git"
-  },
-  "publishConfig": {
-    "tag": "5x"
   },
   "bugs": {
     "url": "https://github.com/easy-team/easywebpack-react/issues"
