@@ -64,6 +64,9 @@
     "type": "git",
     "url": "git+https://github.com/easy-team/easywebpack-react.git"
   },
+  "publishConfig": {
+    "tag": "4x"
+  },
   "bugs": {
     "url": "https://github.com/easy-team/easywebpack-react/issues"
   },
