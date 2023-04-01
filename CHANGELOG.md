@@ -1,3 +1,12 @@
+## [5.0.1](https://github.com/easy-team/easywebpack-react/compare/5.0.0...5.0.1) (2023-04-01)
+
+
+### Bug Fixes
+
+* babel default config ([b7b96b4](https://github.com/easy-team/easywebpack-react/commit/b7b96b4501becec66d19166659fb48df434b557c))
+
+
+
 # [5.0.0](https://github.com/easy-team/easywebpack-react/compare/4.4.3...5.0.0) (2020-10-16)
 
 
